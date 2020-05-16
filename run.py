@@ -1,14 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-
-# from urllib import quote      #Uncomment line below to use python 2
-from urllib.parse import quote  #Uncomment line below to use python 3 
+from urllib.parse import quote   
 
 from time import sleep
-# %%from pyvirtualdisplay import Display
-# display = Display(visible=0, size=(800, 600))
-# display.start()
 
 #update css selector if you have any issues
 css_selector = "#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
@@ -16,12 +11,8 @@ css_selector = "#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > d
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 msg = '''
 Hey!!
-This is a *test* _message_.
-See you can do _*all sorts of text formatting*_.
-You can join my fancy group to lear ML at https://whatsapp.com/amazingML
+This message is sent by automation.
 '''     
-
-
 driver = webdriver.Chrome()
 
 phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
@@ -30,15 +21,16 @@ with open ('numbers.txt') as numbers_file:                    #uncomment these t
     	line=line.strip()
     	if len (line)==10:								   		#skip numbers of length not equal to 10
     		phone.append(str(line))
-# phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
+        
+
 
 msg = quote(msg)  # url-encode the message, use other functios for handling dictionaries, not recommended
-driver.get("https://web.whatsapp.com")  # first call without delay in order to scan qr code
-sleep(2)
+driver.get("https://web.whatsapp.com")  
+sleep(60) #update your time  of delay incase internet is slow
 for number in phone:
     url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
     driver.get(url)
-    sleep(3)  # any delay is okay, even 0, but 3-5 seems appropriate
+    sleep(3)  
     for i in range(100):
         try:
             driver.find_element_by_css_selector(css_selector).send_keys(Keys.RETURN)
