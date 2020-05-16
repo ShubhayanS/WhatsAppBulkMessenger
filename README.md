@@ -2,7 +2,7 @@
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ShubhayanS/WhatsAppBulkMessenger/graphs/commit-activity) 
 [![GitHub issues](https://img.shields.io/github/issues/ShubhayanS/WhatsAppBulkMessenger)](https://github.com/ShubhayanS/WhatsAppBulkMessenger/issues)
-[![GitHub forks](https://img.shields.io/github/forks/ShubhayanS/WhatsAppBulkMessenger?style=social)](https://github.com/ShubhayanS/WhatsAppBulkMessenger/network) [![GitHub stars](https://img.shields.io/github/stars/ShubhayanS/WhatsApp-Message-Sender?style=social)](https://github.com/ShubhayanS/WhatsAppBulkMessenger/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ShubhayanS/WhatsAppBulkMessenger?style=social)](https://github.com/ShubhayanS/WhatsAppBulkMessenger/network) [![GitHub stars](https://img.shields.io/github/stars/ShubhayanSWhatsAppBulkMessenger?style=social)](https://github.com/ShubhayanS/WhatsAppBulkMessenger/stargazers)
  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
